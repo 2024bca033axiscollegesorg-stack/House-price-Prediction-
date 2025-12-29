@@ -26,7 +26,7 @@ for i in final_X:
   result = st.sidebar.slider(f'Select {i} value',min_value,max_value)
   all_value.append(result)
 
-user_X= scaler.transfrom([all_value])
+user_X = scaler.transfrom([all_value])
 
 @st.cache_data
 def ml_model(X,y):
@@ -45,6 +45,7 @@ with st.spinner('Predicting House Price'):
 
 st.success(f'Estimated House Price is: $ {final_price}')
 st.markdown('''**Design and Developed by: Gargi Porwal**''')
+
 
 
 
